@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: System-ui;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color:lightskyblue;
+    
+}
+h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: cursive;
+    
+}
+.chat{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.chat h2{
+    font-size: 2.6rem;
+    text-align: center;
+    font-family: cursive;
+}
+.msg {
+    width: 420px;
+    height: 380px;
+    font-family: cursive;
+    border-top: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.msg::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+.input_msg {
+
+
+
+
+    display: flex;
+    justify-content: space-around;
+
+}
+input{
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 0.4rem 1.3rem;
+}
+.input_msg button{
+    background-color: #075e54;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0.4rem 1.0rem;
+    font-size: 1.3rem;
+
+
+}
+
+.msg p{
+    background-color: lightslategrey;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 1rem;
+
+}
+.msg p span{
+    display: block;
+    font-weight: bold;
+    opacity: 0.5;
+   
+}
+
+.msg .sender{
+    background-color: rgb(59, 238, 59);
+    align-self: flex-end;
+}
